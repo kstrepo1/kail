@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.banner{
+    position:absolute;
+    color:black;
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    top:50%
+}
+
+#bannertext{
+    margin:10px;
+    font-size: x-large;
+    animation-name: bannerKeyframe;
+    animation-duration: 2s;
+    position: relative;
+}
+
+.dm-sans-font {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes bannerKeyframe {
+    0%   {left:100%;}
+    100% {left:0px;}
+  }
+
+  @font-face {
+    font-family: "DM Sans";
+    src:
+      local("DM Sans"),
+      url("/fonts/DMSans.ttf") format("ttf"),
+  }
